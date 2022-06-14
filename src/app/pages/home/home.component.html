@@ -1,0 +1,30 @@
+<ng-container>
+    <div class="centered">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center">
+                    <mat-card-title class="text-center">Best Booking.com Hotel</mat-card-title>
+                </h5>
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>City</mat-label>
+                        <input type="text" matInput formControlName="city" placeholder="Barcelona">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Country</mat-label>
+                        <input type="text" matInput formControlName="country" placeholder="Spain">
+                    </mat-form-field>
+                    <br>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-button  btn-success text-center">Search...</button>
+                    </div>
+                </form>
+                <div class="text-center" *ngIf="hotelInfo">
+                    <a (click)="openHotel(hotelInfo.link)">{{hotelInfo.name}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

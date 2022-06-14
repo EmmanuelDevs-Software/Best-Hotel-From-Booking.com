@@ -1,0 +1,6 @@
+{
+	"appId": "com.example.app",
+	"appName": "Best-booking",
+	"webDir": "dist/best-booking",
+	"bundledWebRuntime": false
+}
