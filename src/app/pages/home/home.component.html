@@ -12,6 +12,7 @@
                         <mat-label>City</mat-label>
                         <input type="text" matInput formControlName="city" placeholder="Barcelona">
                     </mat-form-field>
+                    <br>
                     <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Country</mat-label>
                         <input type="text" matInput formControlName="country" placeholder="Spain">
@@ -21,7 +22,7 @@
                         <button type="submit" class="btn btn-button  btn-success text-center">Search...</button>
                     </div>
                 </form>
-                <div class="text-center" *ngIf="hotelInfo">
+                <div class="text-center link" *ngIf="hotelInfo">
                     <a (click)="openHotel(hotelInfo.link)">{{hotelInfo.name}}</a>
                 </div>
             </div>

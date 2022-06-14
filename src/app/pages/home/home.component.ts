@@ -35,12 +35,6 @@ export class HomeComponent implements OnInit {
     this.apiSvr.getBestHotelFromBookingDotCom(form.value.city, form.value.country).subscribe((res: any) => {
       this.hotelInfo = res
     })
-
-    this.hotelInfo = {
-      link: "https://www.booking.com/hotel/es/room-mate-alba.de.html?aid=1938431",
-      name: "Room Mate Alba",
-      rating: 9.3
-    }
   }
 
 
